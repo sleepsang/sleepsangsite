@@ -2,6 +2,12 @@ body {
     background-color: lightblue;
 }
 
+p {
+	background-color: #F0F;
+	font-size: 64;
+}
+
+
 h1 {
     color: navy;
     margin-left: 20px;
