@@ -1,9 +1,12 @@
 //var img;  // Declare variable 'img'.
 
+/*
 function setup() {
   createCanvas(960, 540);
 }
+*/
 
+/*
 function draw() {
     if (mouseIsPressed) {
     fill(0);
@@ -12,6 +15,7 @@ function draw() {
   }
   ellipse(mouseX, mouseY, 80, 80);
 }
+*/
 
 /* 
 shifting gaussian blur to imitate the effect of a heat haze mirage from surfaces (grounds on hot days etc) 
@@ -24,3 +28,22 @@ shifting gaussian blur to imitate the effect of a heat haze mirage from surfaces
     
     * deviceMoved, deviceShaken? accelerationX, pAccelerationX?
 */
+
+// create web audio api context
+var audioCtx = new (window.AudioContext)();
+
+// create Oscillator node
+var oscillator = audioCtx.createOscillator();
+
+//warning loud oscillator
+oscillator.type = 'square';
+oscillator.frequency.value = 280; // value in hertz
+oscillator.connect(audioCtx.destination);
+oscillator.start();
+
+// create gain node
+var gainNode = audioCtx.createGain();
+var source;
+gainNode.gain(0.2);
+source.connect(gainNode);
+gainNode.connect(audioCtx.destination);
