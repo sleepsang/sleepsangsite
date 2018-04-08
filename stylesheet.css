@@ -1,14 +1,9 @@
 body {
-    background-color: lightblue;
+    background-color: #FFFFFF;
 }
-
-p {
-	background-color: #FFFFFF;
-	font-size: 64;
-}
-
 
 h1 {
-    color: navy;
-    margin-left: 20px;
+	background-color: #FFFFFF;
+	font-size: 64;
+  //border-style: dotted;
 }
