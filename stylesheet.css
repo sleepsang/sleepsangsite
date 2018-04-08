@@ -1,11 +1,11 @@
 body {
-    background-color: #FFFFFF;
+    background-image: image();
     margin: 0;
 }
 
 h1 {
-	//background-color: #FFFFFF;
+	//background-color: white;
+  opacity: 0.69;
 	//font-size: 64;
   //border-style: dotted;
-
 }
