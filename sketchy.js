@@ -1,8 +1,20 @@
-//var img;  // Declare variable 'img'.
+/*var iframeElement   = document.querySelector('iframe');
+var iframeElementID = iframeElement.id;
+var widget1         = SC.Widget(iframeElement);
+var widget2         = SC.Widget(iframeElementID);
+*/
 
 /*
 function setup() {
-  createCanvas(960, 540);
+  noCanvas();
+}
+*/
+
+/*
+function playyy() {
+  if (mouseIsPressed) {
+    "sc-widget".play();
+  }
 }
 */
 

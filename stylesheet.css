@@ -11,9 +11,11 @@ h1 {
   //border-style: dotted;
 }
 
-p1 {
-  width: 40;
-  height: 40;
-  background-color: black;
-  border-style: dotted;
+.playbutt {
+  width: 11px;
+  height: 11px;
+  //position: relative;
+  resize: both;
+  background-color: cyan;
+  border-style: ridge;
 }
