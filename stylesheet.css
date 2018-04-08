@@ -1,9 +1,11 @@
 body {
     background-color: #FFFFFF;
+    margin: 0;
 }
 
 h1 {
-	background-color: #FFFFFF;
-	font-size: 64;
+	//background-color: #FFFFFF;
+	//font-size: 64;
   //border-style: dotted;
+
 }
