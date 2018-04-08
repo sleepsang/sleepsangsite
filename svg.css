@@ -1,10 +1,12 @@
+.button {
 
+}
 
 .logo {
-width: 1900px;
-height: 1100px;
+width: 365px;
+height: 205px;
 resize: both;
 
 opacity: 10000;
-background-image: url(assets/sleeplogopixels-itj_1.svg);
+//background-image: url(assets/sleeplogopixels-itj_1.svg);
 }
