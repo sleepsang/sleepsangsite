@@ -1,12 +1,6 @@
-.button {
-
-}
-
 .logo {
 width: 365px;
 height: 205px;
 resize: both;
-
-opacity: 10000;
-//background-image: url(assets/sleeplogopixels-itj_1.svg);
+opacity: 1;
 }

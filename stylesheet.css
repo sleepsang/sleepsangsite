@@ -1,11 +1,19 @@
 body {
-    background-image: image();
+    background-image: url(assets/james_sweden3-ipad_size.png);
+    opacity: 1;
     margin: 0;
 }
 
 h1 {
 	//background-color: white;
-  opacity: 0.69;
+  opacity: 0.78;
 	//font-size: 64;
   //border-style: dotted;
+}
+
+p1 {
+  width: 40;
+  height: 40;
+  background-color: black;
+  border-style: dotted;
 }
