@@ -1,21 +1,25 @@
+var canvas;
+
+function resizeWindow() {
+  createCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
- createCanvas(600,600);
- stroke(10);
- //fill(255,255,255);
- //frameRate(60);
- for (var i = 0; i < 4; i++) { //make new wanderer a set number of times. !offset - add way to change starting x and starting y
+
+ for (var i = 0; i < 4; i++) {
    wanderers[i] = new Wanderer();
  }
 
- for (var i = 0; i < 400; i++) { //make new follower a set number of times. !offset - add way to change starting x and starting y... eventually to link each follower to it's wanderer?
+ for (var i = 0; i < 40; i++) {
    followers[i] = new Follower();
  }
 
 }
 
 function draw() {
-  background(0);
-
+   canvas = createCanvas(windowWidth, windowHeight);
+   canvas.position(0,0);
+   canvas.style('z-index','-1');
   for (var i = 0; i < wanderers.length; i++) {
     wanderers[i].wanshow();
     wanderers[i].wanmove();

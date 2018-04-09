@@ -11,8 +11,8 @@ function Wanderer() { //constructor function for each wanderer
 
       if (this.x <= width && this.y <= height) {
 
-      this.x += 1 + (random(-1.7,1.7));
-      this.y += 1 + (random(-1.7,1.7));
+      this.x += 1 + (random(-1.7,1.7)+(mouseX/250));
+      this.y += 1 + (random(-1.7,1.7)+(mouseY/230));
         }
 
       else {
@@ -31,15 +31,15 @@ function Wanderer() { //constructor function for each wanderer
 
 function Follower() {
 
-  this.x = -224; //set initial vector values - this time starting far enough behind to follow the wanderer(s)
-  this.y = -224;
+  this.x = (windowWidth-224); //set initial vector values - this time starting far enough behind to follow the wanderer(s)
+  this.y = (windowHeight-224);
 
   this.folmove = function() {
 
     if (this.x <= width && this.y <= height) {
 
-      this.x += 1 + (random(-1.7,1.7));
-      this.y += 1 + (random(-1.7,1.7));
+      this.x += 1 + (random(-1.7,1.7)+(mouseX/250));
+      this.y += 1 + (random(-1.7,1.7)+(mouseY/230));
         }
 
       else {
@@ -52,6 +52,7 @@ function Follower() {
 
   this.folshow = function() {
     ellipse(this.x,this.y,8,8); //smaller circles for follower
+    this.fill = fill(130,140,220,78);
   }
 
 }
