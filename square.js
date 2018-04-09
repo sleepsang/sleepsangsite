@@ -17,9 +17,9 @@ class SquareA {
   update() {
     let countMod = frameCount % 2;
       if (countMod == 0) {
-        this.fill = 255;
+        this.fill = (255,0,0,50);
       } else{
-        this.fill = ([50,200,200]);
+        this.fill = ([50,200,200,50]);
       }
 
   }
@@ -45,9 +45,9 @@ class SquareB {
   update() {
     let countMod = frameCount % 2;
       if (countMod == 1) {
-        this.fill = 255;
+        this.fill = (255,0,0,50);
       } else{
-        this.fill = ([50,200,200]);
+        this.fill = ([50,200,200,50]);
       }
 
       //console.log(countMod);

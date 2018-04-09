@@ -27,104 +27,97 @@ squareL6 = [];
 squareL7 = [];
 squareL8 = [];
 
-
-
-/*
-for (let i=0; i<9; i++) {
-	let squareL[i] = [];
-}
-i do not know why this doesn't work but it would make things easier
-also i think i fucked up at the start and this isn't the best way to do this
-*/
+var canvas;
 
 function setup() {
 	frameRate(2);
-	createCanvas(1500, 1500);
-
+	canvas = createCanvas(340,300);
+	canvas.position(0,0);
+	fill(0,0,0,50);
 
 	for (let i=0; i<10; i++){
-		squareA[i] = new SquareA((0+(i*20)),(100+(i*20)),20,20,255);
-		squareB[i] = new SquareB((20+(i*20)),(100+(i*20)),20,20,([50,200,200]));
-		squareC[i] = new SquareA((40+(i*20)),(100+(i*20)),20,20,255);
-		squareD[i] = new SquareB((60+(i*20)),(100+(i*20)),20,20,([50,200,200]));
-		squareE[i] = new SquareA((80+(i*20)),(100+(i*20)),20,20,255);
-		squareF[i] = new SquareB((100+(i*20)),(100+(i*20)),20,20,([50,200,200]));
-		squareG[i] = new SquareA((120+(i*20)),(100+(i*20)),20,20,255);
-		squareH[i] = new SquareB((140+(i*20)),(100+(i*20)),20,20,([50,200,200]));
+		squareA[i] = new SquareA((0+(i*20)),((i*20)),20,20,(255,0,0,50));
+		squareB[i] = new SquareB((20+(i*20)),((i*20)),20,20,([50,200,200,50]));
+		squareC[i] = new SquareA((40+(i*20)),((i*20)),20,20,(255,0,0,50));
+		squareD[i] = new SquareB((60+(i*20)),((i*20)),20,20,([50,200,200,50]));
+		squareE[i] = new SquareA((80+(i*20)),((i*20)),20,20,(255,0,0,50));
+		squareF[i] = new SquareB((100+(i*20)),((i*20)),20,20,([50,200,200,50]));
+		squareG[i] = new SquareA((120+(i*20)),((i*20)),20,20,(255,0,0,50));
+		squareH[i] = new SquareB((140+(i*20)),((i*20)),20,20,([50,200,200,50]));
 }
 
 for (let i=0; i<9; i++){
-	squareR0[i] = new SquareA((160+(i*20)),(100+(i*20)),20,20,255);
+	squareR0[i] = new SquareA((160+(i*20)),((i*20)),20,20,(255,0,0,50));
 }
 
 for (let i=0; i<8; i++){
-	squareR1[i] = new SquareB((180+(i*20)),(100+(i*20)),20,20,([50,200,200]));
+	squareR1[i] = new SquareB((180+(i*20)),((i*20)),20,20,([50,200,200,50]));
 }
 
 for (let i=0; i<7; i++){
-	squareR2[i] = new SquareA((200+(i*20)),(100+(i*20)),20,20,255);
+	squareR2[i] = new SquareA((200+(i*20)),((i*20)),20,20,(255,0,0,50));
 }
 
 for (let i=0; i<6; i++){
-	squareR3[i] = new SquareB((220+(i*20)),(100+(i*20)),20,20,([50,200,200]));
+	squareR3[i] = new SquareB((220+(i*20)),((i*20)),20,20,([50,200,200,50]));
 }
 
 for (let i=0; i<5; i++){
-	squareR4[i] = new SquareA((240+(i*20)),(100+(i*20)),20,20,255);
+	squareR4[i] = new SquareA((240+(i*20)),((i*20)),20,20,(255,0,0,50));
 }
 
 for (let i=0; i<4; i++){
-	squareR5[i] = new SquareB((260+(i*20)),(100+(i*20)),20,20,([50,200,200]));
+	squareR5[i] = new SquareB((260+(i*20)),((i*20)),20,20,([50,200,200,50]));
 }
 
 for (let i=0; i<3; i++){
-	squareR6[i] = new SquareA((280+(i*20)),(100+(i*20)),20,20,255);
+	squareR6[i] = new SquareA((280+(i*20)),((i*20)),20,20,(255,0,0,50));
 }
 
 for (let i=0; i<2; i++){
-	squareR7[i] = new SquareB((300+(i*20)),(100+(i*20)),20,20,([50,200,200]));
+	squareR7[i] = new SquareB((300+(i*20)),((i*20)),20,20,([50,200,200,50]));
 }
 
 for (let i=0; i<1; i++){
-	squareR8[i] = new SquareA((320+(i*20)),(100+(i*20)),20,20,255);
+	squareR8[i] = new SquareA((320+(i*20)),((i*20)),20,20,(255,0,0,50));
 }
 
 //
 
 for (let i=0; i<9; i++){
-	squareL0[i] = new SquareB((0+(i*20)),(120+(i*20)),20,20,([50,200,200]));
+	squareL0[i] = new SquareB((0+(i*20)),(20+(i*20)),20,20,([50,200,200,50]));
 }
 
 for (let i=0; i<8; i++){
-	squareL1[i] = new SquareA((0+(i*20)),(140+(i*20)),20,20,255);
+	squareL1[i] = new SquareA((0+(i*20)),(40+(i*20)),20,20,(255,0,0,50));
 }
 
 for (let i=0; i<7; i++){
-	squareL2[i] = new SquareB((0+(i*20)),(160+(i*20)),20,20,([50,200,200]));
+	squareL2[i] = new SquareB((0+(i*20)),(60+(i*20)),20,20,([50,200,200,50]));
 }
 
 for (let i=0; i<6; i++){
-	squareL3[i] = new SquareA((0+(i*20)),(180+(i*20)),20,20,255);
+	squareL3[i] = new SquareA((0+(i*20)),(80+(i*20)),20,20,(255,0,0,50));
 }
 
 for (let i=0; i<5; i++){
-	squareL4[i] = new SquareB((0+(i*20)),(200+(i*20)),20,20,([50,200,200]));
+	squareL4[i] = new SquareB((0+(i*20)),(100+(i*20)),20,20,([50,200,200,50]));
 }
 
 for (let i=0; i<4; i++){
-	squareL5[i] = new SquareA((0+(i*20)),(220+(i*20)),20,20,255);
+	squareL5[i] = new SquareA((0+(i*20)),(120+(i*20)),20,20,(255,0,0,50));
 }
 
 for (let i=0; i<3; i++){
-	squareL6[i] = new SquareB((0+(i*20)),(240+(i*20)),20,20,([50,200,200]));
+	squareL6[i] = new SquareB((0+(i*20)),(140+(i*20)),20,20,([50,200,200,50]));
 }
 
 for (let i=0; i<2; i++){
-	squareL7[i] = new SquareA((0+(i*20)),(260+(i*20)),20,20,255);
+	squareL7[i] = new SquareA((0+(i*20)),(160+(i*20)),20,20,(255,0,0,50));
 }
 
 for (let i=0; i<1; i++){
-	squareL8[i] = new SquareB((0+(i*20)),(280+(i*20)),20,20,([50,200,200]));
+	squareL8[i] = new SquareB((0+(i*20)),(180+(i*20)),20,20,([50,200,200,50]));
 }
 
 /*
@@ -139,6 +132,7 @@ for (let i=0; i<1; i++){
 function draw() {
 
 	background(0);
+	tint(255, 127);
 
 	for (let i=0; i<10; i++){
 		squareA[i].show();
