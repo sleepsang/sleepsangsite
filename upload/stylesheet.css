@@ -1,0 +1,21 @@
+body {
+    background-image: url(assets/james_sweden3-ipad_size.png);
+    opacity: 1;
+    margin: 0;
+}
+
+h1 {
+	//background-color: white;
+  opacity: 0.78;
+	//font-size: 64;
+  //border-style: dotted;
+}
+
+.playbutt {
+  width: 11px;
+  height: 11px;
+  //position: relative;
+  resize: both;
+  background-color: cyan;
+  border-style: ridge;
+}
