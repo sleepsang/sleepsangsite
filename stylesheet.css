@@ -11,6 +11,13 @@ h1 {
   //border-style: dotted;
 }
 
+.logo {
+width: 365px;
+height: 205px;
+resize: both;
+opacity: 1;
+}
+
 .playbutt {
   width: 11px;
   height: 11px;
