@@ -1,14 +1,26 @@
-/*var iframeElement   = document.querySelector('iframe');
+/*
+// sc widget code
+var iframeElement   = document.querySelector('iframe');
 var iframeElementID = iframeElement.id;
 var widget1         = SC.Widget(iframeElement);
 var widget2         = SC.Widget(iframeElementID);
 */
 
-/*
-function setup() {
-  noCanvas();
+var canvas;
+
+function windowResize()
+    resizeCanvas(windowWidth, windowHeight);
 }
-*/
+
+function setup() {
+  canvas = createCanvas(windowWidth, windowHeight);
+  canvas.position(0,0);
+  canvas.style('z-index', '-1');
+}
+
+function draw() {
+  ellipse(20,20,40);
+}
 
 /*
 function playyy() {
