@@ -24,11 +24,15 @@ opacity: 0.73;
 width: 365px;
 height: 205px;
 resize: both;
-position: relative;
+position: absolute;
 z-index: 0;
+left: 1px;
+top: 10px;
+/*
 left: -374px;
 top: -29px;
-opacity: 0.69;
+*/
+opacity: 0.79;
 }
 
 .playbutt {
