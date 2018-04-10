@@ -30,13 +30,15 @@ for (var i = 0; i < followers.length; i++) {
     followers[i].folmove();
 }
 
+if ( mouseX > width/16 ) {
+  fill(Math.floor(random(120,255)), Math.floor(random(100,185)), Math.floor(random(155,230)) );
+  ellipse(Math.floor(random(0, width)),Math.floor(random(0, height)),100,100);
 }
 
-/*
-  if ( mouseX > width/2 ) {
-    ellipse(Math.floor(random(0, width)),Math.floor(random(0, height)),10,11);
-  }
-  */ //random dots when mouse is on right side of canvas
+}
+
+
+
 
 /*
 - explore sound libraries or ways of interfacing between p5 and supcol/pd. each random gen dot to trigger note etc

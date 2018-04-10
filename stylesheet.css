@@ -35,11 +35,10 @@ top: -29px;
 opacity: 0.79;
 }
 
-.playbutt {
-  width: 11px;
-  height: 11px;
-  //position: relative;
-  resize: both;
-  background-color: cyan;
-  border-style: ridge;
+.playbutto {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+
 }
