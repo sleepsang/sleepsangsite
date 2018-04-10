@@ -30,7 +30,7 @@ for (var i = 0; i < followers.length; i++) {
     followers[i].folmove();
 }
 
-if ( mouseY > height/4 ) {
+if ( mouseY > height/2 ) {
   strokeWeight(0);
   fill(Math.floor(random(220,255)), Math.floor(random(100,185)), Math.floor(random(155,230)) );
   ellipse(Math.floor(random(0, width-100)),Math.floor(random(0, height-100)),8,8);
