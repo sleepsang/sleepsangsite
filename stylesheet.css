@@ -35,8 +35,12 @@ top: -29px;
 opacity: 0.79;
 }
 
-.playbutto {
+#playbutto {
   position: fixed;
+  width: 150;
+  height: 150;
+  resize: both;
+  background-color: #000000;
   top: 50%;
   left: 50%;
   opacity: 1;
