@@ -36,10 +36,11 @@ opacity: 0.79;
 }
 
 .playbutt {
-  width: 11px;
-  height: 11px;
-  //position: relative;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  //top: -200;
   resize: both;
-  background-color: cyan;
-  border-style: ridge;
+  background-color: white;
+  border-style: hidden;
 }
