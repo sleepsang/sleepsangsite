@@ -5,16 +5,9 @@ function resizeWindow() {
   createCanvas(windowWidth, windowHeight);
 }
 
-function rotatePlaybutto() {
-
-  rotate(PI / 3.0);
-  element.style(‘background-color’, ‘#FFFFFF’);
-}
-
 function setup() {
 
-       element = select('#playbutto');
-       element.mouseOver(rotatePlaybutto);
+
 
        for (var i = 0; i < 4; i++) {
          wanderers[i] = new Wanderer();
@@ -46,4 +39,10 @@ function draw() {
         ellipse(Math.floor(random(0, width-100)),Math.floor(random(0, height-100)),8,8);
       }
 
+}
+
+function rotatePlaybutto() {
+  element = select('#playbutto');
+  element.mouseOver(rotate(PI / 3.0););
+  element.style(‘background-color’, ‘#FFFFFF’);
 }
