@@ -41,8 +41,14 @@ function draw() {
 
 }
 
+
+// maybe put this inside some script tags in the html and als sort out the syntax
 function rotatePlaybutto() {
   element = select('#playbutto');
-  element.mouseOver(rotate(PI / 3.0););
-  element.style(‘background-color’, ‘#FFFFFF’);
+  this.rotate(PI / 3.0););
+  //element.style(‘background-color’, ‘#FFFFFF’);
+}
+
+function element.mouseOver() {
+  rotatePlaybutto();
 }
