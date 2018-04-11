@@ -20,35 +20,31 @@ resize: both;
 opacity: 0.73;
 }
 
-#logotwo {
-width: 365px;
-height: 205px;
-resize: both;
-position: absolute;
-z-index: 0;
-left: 1px;
-top: 10px;
-/*
-left: -374px;
-top: -29px;
-*/
-opacity: 0.79;
-}
-
 #logotwonoisy {
 width: 365px;
 height: 205px;
 resize: both;
 position: absolute;
-z-index: 0;
+z-index: 1;
 left: 1px;
 top: 10px;
-/*
-left: -374px;
-top: -29px;
-*/
-opacity: 0.0;
+opacity: 0.08;
 }
+
+
+#logotwonormal {
+width: 365px;
+height: 205px;
+resize: both;
+position: absolute;
+z-index: 1;
+left: 1px;
+top: 10px;
+opacity: 0.79; //0.79
+
+
+}
+
 
 #playbutto {
   position: fixed;

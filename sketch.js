@@ -1,5 +1,6 @@
 var canvas;
 var playbutton;
+var logoone;
 var logotwo;
 var logotwonoisy;
 
@@ -7,13 +8,18 @@ function resizeWindow() {
   createCanvas(windowWidth, windowHeight);
 }
 
-function opacityLogoTwo() {
-  this.style('opacity', 0.0);
+function transparentLogoTwoNormal() {
+  logotwo.style('opacity', 0.01);
+  logotwonoisy.style('opacity', 0.34);
+  logoone.style('opacity', 0.24);
 }
 
-function opacityLogoTwoNoisy() {
-  this.style('opacity', 0.0);
+function opaqueLogoTwoNormal() {
+  logotwo.style('opacity', 0.79);
+  logotwonoisy.style('opacity', 0.01);
+  logoone.style('opacity',0.73);
 }
+
 
 function setup() {
        for (var i = 0; i < 4; i++) {
@@ -24,14 +30,10 @@ function setup() {
          followers[i] = new Follower();
        }
 
-       if (logotwo.mouseOver = true) {
-         
-       }
+       //logos = selectAll('.logo');
 
-          else {
 
-          }
-       )
+
 
 
 }
@@ -56,6 +58,11 @@ function draw() {
         ellipse(Math.floor(random(0, width-100)),Math.floor(random(0, height-100)),8,8);
       }
 
+      logoone = select('#logoone');
+      logotwo = select('#logotwonormal');
+      logotwonoisy = select('#logotwonoisy');
+      logotwo.mouseOver(transparentLogoTwoNormal);
+      logotwo.mouseOut(opaqueLogoTwoNormal);
 
 
 
