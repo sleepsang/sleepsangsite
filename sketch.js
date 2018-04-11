@@ -1,14 +1,21 @@
 var canvas;
-var element = select('#playbutto');
+var playbutton;
+var logotwo;
+var logotwonoisy;
 
 function resizeWindow() {
   createCanvas(windowWidth, windowHeight);
 }
 
+function opacityLogoTwo() {
+  this.style('opacity', 0.0);
+}
+
+function opacityLogoTwoNoisy() {
+  this.style('opacity', 0.0);
+}
+
 function setup() {
-
-
-
        for (var i = 0; i < 4; i++) {
          wanderers[i] = new Wanderer();
        }
@@ -16,6 +23,16 @@ function setup() {
        for (var i = 0; i < 40; i++) {
          followers[i] = new Follower();
        }
+
+       if (logotwo.mouseOver = true) {
+         
+       }
+
+          else {
+
+          }
+       )
+
 
 }
 
@@ -39,29 +56,33 @@ function draw() {
         ellipse(Math.floor(random(0, width-100)),Math.floor(random(0, height-100)),8,8);
       }
 
-      element.mouseOver(rotatePlaybutto);
-      element.mouseOut(stoprotatePlaybutto);
+
+
+
+
+      //playbutton.mouseOver(rotatePlaybutto);
+      //playbutton.mouseOut(stoprotatePlaybutto);
 
 }
 
-
+/*
 // maybe put this inside some script tags in the html and also sort out the syntax
-function rotatePlaybutto() {
+function rotatePlaybutton() {
   this.rotate(PI / 3.0););
 }
+*/
 
-function stoprotatePlaybutto() {
+/*
+function stoprotatePlaybutton() {
   // ???stop rotation lol, empty function?
 
-  /*
-  If any transformations are performed within draw()
-  (ex: scale, rotate, translate, their effects will
-  be undone at the beginning of draw(), so transformations
-  will not accumulate over time. On the other hand,
-  styling applied (ex: fill, stroke, etc) will remain in effect.
-  /*
 }
+*/
 
-function element.mouseOver() {
-  rotatePlaybutto();
-}
+/*
+If any transformations are performed within draw()
+(ex: scale, rotate, translate, their effects will
+be undone at the beginning of draw(), so transformations
+will not accumulate over time. On the other hand,
+styling applied (ex: fill, stroke, etc) will remain in effect.
+*/

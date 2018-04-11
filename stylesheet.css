@@ -11,7 +11,7 @@ h1 {
   //border-style: dotted;
 }
 
-.logoone {
+#logoone {
 width: 367px;
 height: 223px;
 position: relative;
@@ -20,7 +20,7 @@ resize: both;
 opacity: 0.73;
 }
 
-.logotwo {
+#logotwo {
 width: 365px;
 height: 205px;
 resize: both;
@@ -33,6 +33,21 @@ left: -374px;
 top: -29px;
 */
 opacity: 0.79;
+}
+
+#logotwonoisy {
+width: 365px;
+height: 205px;
+resize: both;
+position: absolute;
+z-index: 0;
+left: 1px;
+top: 10px;
+/*
+left: -374px;
+top: -29px;
+*/
+opacity: 0.0;
 }
 
 #playbutto {
