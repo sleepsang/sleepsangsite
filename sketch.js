@@ -1,5 +1,5 @@
 var canvas;
-var element;
+var element = select('#playbutto');
 
 function resizeWindow() {
   createCanvas(windowWidth, windowHeight);
@@ -39,14 +39,27 @@ function draw() {
         ellipse(Math.floor(random(0, width-100)),Math.floor(random(0, height-100)),8,8);
       }
 
+      element.mouseOver(rotatePlaybutto);
+      element.mouseOut(stoprotatePlaybutto);
+
 }
 
 
-// maybe put this inside some script tags in the html and als sort out the syntax
+// maybe put this inside some script tags in the html and also sort out the syntax
 function rotatePlaybutto() {
-  element = select('#playbutto');
   this.rotate(PI / 3.0););
-  //element.style(‘background-color’, ‘#FFFFFF’);
+}
+
+function stoprotatePlaybutto() {
+  // ???stop rotation lol, empty function?
+
+  /*
+  If any transformations are performed within draw()
+  (ex: scale, rotate, translate, their effects will
+  be undone at the beginning of draw(), so transformations
+  will not accumulate over time. On the other hand,
+  styling applied (ex: fill, stroke, etc) will remain in effect.
+  /*
 }
 
 function element.mouseOver() {
