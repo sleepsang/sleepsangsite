@@ -8,6 +8,18 @@ function resizeWindow() {
   createCanvas(windowWidth, windowHeight);
 }
 
+/* instead of these two functions and having to load in two images and change
+their transparency using CSS, we can use JS to alter the SVG to apply the same filter
+used in our 2nd file.
+
+function addVhsBlur() {
+ document.getElementById("logoone").setAttribute("filter", "#something");
+}
+
+http://svgtutorial.com/manipulating-svg-with-javascript/
+
+*/
+
 function transparentLogoTwoNormal() {
   logotwo.style('opacity', 0.01);
   logotwonoisy.style('opacity', 0.34);
