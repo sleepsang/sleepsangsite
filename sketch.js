@@ -1,46 +1,15 @@
 /* minify for optimised loading https://www.minifier.org/ */
 
 var canvas;
-<<<<<<< HEAD
-var widgetIframe = document.getElementById('sc-widget');
-=======
 var playbutton;
 var logoone;
 var logotwo;
 var logotwonoisy;
->>>>>>> tempsleepsang
 
 function resizeWindow() {
   createCanvas(windowWidth, windowHeight);
 }
 
-<<<<<<< HEAD
-function mouseClicked() {
-  //console.log("hi");
-      widget       = SC.Widget(widgetIframe);
-      widget.bind(SC.Widget.Events.READY, function() {
-           widget.bind(SC.Widget.Events.PLAY, function() {
-             // get information about currently playing sound
-             widget.getCurrentSound(function(currentSound) {
-               console.log('sound ' + currentSound.get('') + 'began to play');
-             });
-           });
-         };
-         *
-}
-
-
-
-function setup() {
-
-   for (var i = 0; i < 4; i++) {
-     wanderers[i] = new Wanderer();
-   }
-
-   for (var i = 0; i < 40; i++) {
-     followers[i] = new Follower();
-   }
-=======
 /* instead of these two functions and having to load in two images and then change
 their transparency using CSS, we can use JS to alter the SVG to apply the same filter
 used in our 2nd file.
@@ -52,7 +21,6 @@ function addVhsBlur() {
 http://svgtutorial.com/manipulating-svg-with-javascript/
 
 */
->>>>>>> tempsleepsang
 
 function transparentLogoTwoNormal() {
   logotwo.style('opacity', 0.01);
@@ -60,29 +28,6 @@ function transparentLogoTwoNormal() {
   logoone.style('opacity', 0.24);
 }
 
-<<<<<<< HEAD
-function draw() {
-
-       canvas = createCanvas(windowWidth, windowHeight);
-       canvas.position(0,0);
-       canvas.style('z-index','-1');
-      for (var i = 0; i < wanderers.length; i++) {
-        wanderers[i].wanshow();
-        wanderers[i].wanmove();
-    }
-
-    for (var i = 0; i < followers.length; i++) {
-        followers[i].folshow();
-        followers[i].folmove();
-    }
-
-      if ( mouseX > width/16 ) {
-        strokeWeight(0);
-        fill(Math.floor(random(195,255)),Math.floor(random(200,255)),Math.floor(random(235,240)));
-        ellipse(Math.floor(random(0, width)),Math.floor(random(0, height)),10,10);
-
-      }
-=======
 function opaqueLogoTwoNormal() {
   logotwo.style('opacity', 0.79);
   logotwonoisy.style('opacity', 0.01);
@@ -100,7 +45,6 @@ function setup() {
        }
        //logos = selectAll('.logo');
 }
->>>>>>> tempsleepsang
 
 function draw() {
          canvas = createCanvas(windowWidth, windowHeight);
@@ -134,17 +78,12 @@ function draw() {
 
 }
 
-<<<<<<< HEAD
-
-
-=======
 /*
 // maybe put this inside some script tags in the html and also sort out the syntax
 function rotatePlaybutton() {
   this.rotate(PI / 3.0););
 }
 */
->>>>>>> tempsleepsang
 
 /*
 function stoprotatePlaybutton() {
