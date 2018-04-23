@@ -1,3 +1,5 @@
+/* minify for optimised loading https://www.minifier.org/ */
+
 var canvas;
 var widgetIframe = document.getElementById('sc-widget');
 
@@ -6,7 +8,7 @@ function resizeWindow() {
 }
 
 function mouseClicked() {
-  console.log("hi");
+  //console.log("hi");
       widget       = SC.Widget(widgetIframe);
       widget.bind(SC.Widget.Events.READY, function() {
            widget.bind(SC.Widget.Events.PLAY, function() {

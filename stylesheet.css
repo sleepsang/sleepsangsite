@@ -1,3 +1,6 @@
+/* use media queries to apply different styling for different device / media https://goo.gl/lQ2yft */
+/* minify for optimised loading https://www.minifier.org/ */
+
 body {
     background-image: url(assets/james_sweden3-ipad_size.png);
     opacity: 1;
