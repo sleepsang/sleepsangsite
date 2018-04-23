@@ -14,7 +14,7 @@ h1 {
   //border-style: dotted;
 }
 
-.logoone {
+#logoone {
 width: 367px;
 height: 223px;
 position: relative;
@@ -23,21 +23,31 @@ resize: both;
 opacity: 0.73;
 }
 
-.logotwo {
+#logotwonoisy {
 width: 365px;
 height: 205px;
 resize: both;
 position: absolute;
-z-index: 0;
+z-index: 1;
 left: 1px;
 top: 10px;
-/*
-left: -374px;
-top: -29px;
-*/
-opacity: 0.79;
+opacity: 0.08;
 }
 
+
+#logotwonormal {
+width: 365px;
+height: 205px;
+resize: both;
+position: absolute;
+z-index: 1;
+left: 1px;
+top: 10px;
+opacity: 0.79; //0.79
+
+}
+
+<<<<<<< HEAD
 .playbutt {
   width: 21px;
   height: 21px;
@@ -46,4 +56,17 @@ opacity: 0.79;
   resize: both;
   background-color: white;
   border-style: hidden;
+=======
+#playbutto {
+  position: fixed;
+  width: 150;
+  height: 150;
+  resize: both;
+  //themecolor: cyan;
+  background-color: #FFFFFF;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+
+>>>>>>> tempsleepsang
 }

@@ -18,13 +18,11 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="sleeplogopixels3.svg">
 
-<!--
 <filter id="displacementFilter">
     <feTurbulence type="turbulence|fractalNoise" baseFrequency="0.01 0.89"
         numOctaves="8" result="turbulence"/>
     <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="20" in="SourceGraphic" in2="turbulence" />
 </filter>
--->
 
 
 
@@ -114,7 +112,7 @@ BX7WpOdtpg4SejT4KwqQnft/AKIENfJnFdskAAAAAElFTkSuQmCC
        preserveAspectRatio="none"
        height="110"
        width="190"
-       
+       filter="url(#displacementFilter)"
        />
   </g>
 </svg>
