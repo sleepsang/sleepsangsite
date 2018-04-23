@@ -8,7 +8,7 @@ function resizeWindow() {
   createCanvas(windowWidth, windowHeight);
 }
 
-/* instead of these two functions and having to load in two images and change
+/* instead of these two functions and having to load in two images and then change
 their transparency using CSS, we can use JS to alter the SVG to apply the same filter
 used in our 2nd file.
 
@@ -41,13 +41,7 @@ function setup() {
        for (var i = 0; i < 40; i++) {
          followers[i] = new Follower();
        }
-
        //logos = selectAll('.logo');
-
-
-
-
-
 }
 
 function draw() {
@@ -75,8 +69,6 @@ function draw() {
       logotwonoisy = select('#logotwonoisy');
       logotwo.mouseOver(transparentLogoTwoNormal);
       logotwo.mouseOut(opaqueLogoTwoNormal);
-
-
 
 
       //playbutton.mouseOver(rotatePlaybutto);
