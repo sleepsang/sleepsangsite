@@ -13,14 +13,20 @@ function resizeWindow() {
 /* instead of these two functions and having to load in two images and then change
 their transparency using CSS, we can use JS to alter the SVG to apply the same filter
 used in our 2nd file.
+http://svgtutorial.com/manipulating-svg-with-javascript/
+http://web.archive.org/web/20140228202850/http://dev.opera.com/articles/view/advanced-svg-animation-techniques
+https://medium.com/@aniboaz/animate-svg-4fa7dd00e860
+
+https://svgontheweb.com/ - SVG practical guide
+https://jakearchibald.github.io/svgomg/ - SVG optimiser
+*/
 
 function addVhsBlur() {
- document.getElementById("logoone").setAttribute("filter", "#something");
+   let object = document.getElementById("logotwonormal");
+   let svgDocument = object.contentDocument;
+   let snazzup = svgDocument.getElementsByClassName("firstb");
+   snazzup[0].setAttribute("fill", "yellow");
 }
-
-http://svgtutorial.com/manipulating-svg-with-javascript/
-
-*/
 
 function transparentLogoTwoNormal() {
   logotwo.style('opacity', 0.01);
@@ -71,7 +77,6 @@ function draw() {
       logotwonoisy = select('#logotwonoisy');
       logotwo.mouseOver(transparentLogoTwoNormal);
       logotwo.mouseOut(opaqueLogoTwoNormal);
-
 
       //playbutton.mouseOver(rotatePlaybutto);
       //playbutton.mouseOut(stoprotatePlaybutto);
