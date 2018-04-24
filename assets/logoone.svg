@@ -6,6 +6,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1900"
@@ -18,8 +19,9 @@
    desc="Created with imagetracer.js version 1.2.3"
    id="svg2"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="sleeplogopixels-itj_3.svg" //>
-   <a xlink:href="https://soundcloud.com/sleepsang">
+   sodipodi:docname="sleeplogopixels-itj_3.svg">
+
+<!-- <a xlink:href="https://soundcloud.com/sleepsang"> -->
 
   <metadata
      id="metadata174">
@@ -671,5 +673,5 @@
      height="392.89447"
      x="1106.1093"
      y="682.69568" />
-     </a>
+   <!--</a>-->
 </svg>
