@@ -19,6 +19,7 @@ https://medium.com/@aniboaz/animate-svg-4fa7dd00e860
 
 https://svgontheweb.com/ - SVG practical guide
 https://jakearchibald.github.io/svgomg/ - SVG optimiser
+stack question https://stackoverflow.com/questions/39280152/animate-transitions-svg-filter-on-image-element
 */
 
 function addVhsBlur() {
